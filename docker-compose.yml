@@ -1,5 +1,8 @@
 version: "3"
 services:
+  app-jar:
+    image: registry.cn-beijing.aliyuncs.com/wangdali/demo-thin-jar:latest
+    build: ./jar
   app:
     image: registry.cn-beijing.aliyuncs.com/wangdali/demo-thin:latest
     build: .
