@@ -12,4 +12,5 @@ java -Dthin.root=thin/root -jar yourapp.jar
 ```
 
 在Docker中需要首先将依赖构建一个镜像，然后在构建应用的时候从依赖的镜像中获取即可。
-其中./Dockerfile为应用的docker build文件，./jar/Dockerfile为依赖的docker build文件
+这样每次更新也仅需要pull更新的部分。
+其中./Dockerfile为应用的docker build文件，./jar/Dockerfile为依赖的docker build文件。
