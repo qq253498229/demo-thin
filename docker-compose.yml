@@ -1,0 +1,10 @@
+version: "3"
+services:
+#  jar:
+#    image: registry.cn-beijing.aliyuncs.com/wangdali/thin-jar:latest
+#    build: ./docker
+  app:
+    image: registry.cn-beijing.aliyuncs.com/wangdali/test:latest
+    build: .
+    ports:
+      - 8080:8080
