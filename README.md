@@ -2,6 +2,8 @@
 
 ## 分离应用和依赖包，降低修改时的文件大小
 
+[spring-boot-thin-launcher](https://github.com/dsyer/spring-boot-thin-launcher)
+
 分离源码jar包和依赖jar包，解决每次mvn package都会重新提交所有依赖的问题
 
 在mvn package之后会在 *target* 目录出现 *yourapp.jar* 文件和thin目录，*thin/root* 目录就是依赖所在目录，*yourapp.jar* 就是应用的包。
