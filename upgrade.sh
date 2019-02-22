@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker-compose build app && docker-compose up -d app
+docker-compose pull app && docker-compose up -d app
