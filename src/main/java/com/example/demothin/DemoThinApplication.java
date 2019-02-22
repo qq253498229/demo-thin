@@ -16,7 +16,7 @@ public class DemoThinApplication {
 
     @GetMapping("/")
     public String index(HttpServletRequest request) {
-        return "test2";
+        return "test3";
     }
 
     public static void main(String[] args) {
