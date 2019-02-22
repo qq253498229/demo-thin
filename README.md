@@ -1,4 +1,4 @@
-# demo-thin
+# Spring Boot项目分离应用和依赖包，降低修改时的文件大小
 
 分离源码jar包和依赖jar包，解决每次mvn package都会重新提交所有依赖的问题
 
