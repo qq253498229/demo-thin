@@ -2,8 +2,8 @@
 
 分离源码jar包和依赖jar包，解决每次mvn package都会重新提交所有依赖的问题
 
-在mvn package之后会在 *target* 目录出现yourapp.jar文件和thin目录，thin目录就是依赖所在目录，yourapp.jar就是应用的包。
-这样只需要在第一次部署以及下次修改了pom.xml文件时才需要上传依赖，其余修改只需上传yourapp.jar即可，大幅减小文件大小(当前仅为11Kb)。
+在mvn package之后会在 *target* 目录出现 *yourapp.jar* 文件和thin目录，*thin/root* 目录就是依赖所在目录，*yourapp.jar* 就是应用的包。
+这样只需要在第一次部署以及下次修改了pom.xml文件时才需要上传依赖，其余修改只需上传 *yourapp.jar* 即可，大幅减小文件大小(当前仅为11Kb)。
 
 启动命令:
 
