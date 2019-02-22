@@ -11,7 +11,7 @@ RUN mvn clean package
 
 FROM java:8-jre-alpine
 COPY --from=1 /root/.m2 /root/.m2
-COPY --from=1 /app/target/app.jar /app.jar
 COPY --from=1 /app/target/thin/root /thin/root
+COPY --from=1 /app/target/app.jar /app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dthin.root=/thin/root","-jar","/app.jar"]
